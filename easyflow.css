@@ -15,23 +15,30 @@
 
 END NEW CHANGES */
 
-
-/* General styles for radio buttons */
+/* Radio button default, 5 per line */
 .ef__option-values-radio-button {
   display: flex !important;
   flex-wrap: wrap;
   gap: .5rem;
+  justify-content: flex-start;
 }
 
 .ef__option-value-radio-button {
   flex-direction: row;
   display: flex;
   align-items: center;
+  width: calc(20% - 0.4rem);
+  /* This will make each radio button take up 20% of the width (5 per line) */
+}
+
+/* Radio button, 2 per line */
+.ef__product-option[data-option-title="How many fairways?"] .ef__option-value-radio-button,
+.ef__product-option[data-option-title="How many hybrids?"] .ef__option-value-radio-button {
   width: calc(50% - 0.25rem);
   /* This will make each radio button take up half the width minus half the gap */
 }
 
-/* Specific styles for "Would you like a Driver?" */
+/* Radio button, vertical */
 .ef__product-option[data-option-title="Would you like a Driver?"] .ef__option-values-radio-button,
 .ef__product-option[data-option-title="Would you like a Putter?"] .ef__option-values-radio-button {
   flex-direction: column !important;
@@ -86,13 +93,13 @@ END NEW CHANGES */
 
 /*
 .ef__option-values-checkbox {
-display: flex !important;
-  gap: 2rem;
+ display: flex !important;
+    gap: 2rem;
 }
 
 .ef__option-value-checkbox {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
 }
 */
