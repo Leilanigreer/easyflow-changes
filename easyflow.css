@@ -16,32 +16,14 @@
 END NEW CHANGES */
 
 
-/* Horizontal radio buttons for test*/
-/* Needs visual keepup */
-
-.ef__product-option[data-option-title="Second Fairway Wood Number"] .ef__option-values-radio-button {
-  display: flex !important;
-  gap: 2rem;
-}
-
-.ef__product-option[data-option-title="Second Fairway Wood Number"].ef__option-value-radio-button {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-}
-
-/* 2 items locked at horizontal radio buttons for test*/
-/* 6 items in the option set  */
-
-.ef__product-option[data-option-title="How many fairways?"] .ef__option-values-radio-button,
-.ef__product-option[data-option-title="How many hybrids?"] .ef__option-values-radio-button {
+/* General styles for radio buttons */
+.ef__option-values-radio-button {
   display: flex !important;
   flex-wrap: wrap;
   gap: .5rem;
 }
 
-.ef__product-option[data-option-title="How many fairways?"] .ef__option-value-radio-button,
-.ef__product-option[data-option-title="How many hybrids?"] .ef__option-value-radio-button {
+.ef__option-value-radio-button {
   flex-direction: row;
   display: flex;
   align-items: center;
@@ -49,34 +31,18 @@ END NEW CHANGES */
   /* This will make each radio button take up half the width minus half the gap */
 }
 
-/* Horizontal radio buttons for test*/
-/* 2 items in the option set  */
-
-.ef__product-option[data-option-title="Which putter would you like?"] .ef__option-values-radio-button {
-  display: flex !important;
-  gap: 2rem;
+/* Specific styles for "Would you like a Driver?" */
+.ef__product-option[data-option-title="Would you like a Driver?"] .ef__option-values-radio-button,
+.ef__product-option[data-option-title="Would you like a Putter?"] .ef__option-values-radio-button {
+  flex-direction: column !important;
+  align-items: flex-start !important;
 }
 
-.ef__product-option[data-option-title="Which putter would you like?"].ef__option-value-radio-button {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
+.ef__product-option[data-option-title="Would you like a Driver?"] .ef__option-value-radio-button,
+.ef__product-option[data-option-title="Would you like a Putter?"] .ef__option-value-radio-button {
+  width: 100% !important;
+  /*    margin-bottom: 0.5rem;  */
 }
-
-/* Horizontal checkboxes for all*/
-
-/*
- .ef__option-values-checkbox {
-  display: flex !important;
-     gap: 2rem;
- }
- 
- .ef__option-value-checkbox {
-     flex-direction: row;
-     display: flex;
-     align-items: center;
- }
- */
 
 /* Remove text below images */
 
@@ -94,27 +60,15 @@ END NEW CHANGES */
 }
 
 /* Set size for FONT image swatches */
-
-.ef__product-option[data-option-title="Font"] .ef__swatch-image {
-
-  height: auto !important;
-  width: 156px !important;
-  aspect-ratio: 156 / 114;
-}
-
-.ef__product-option[data-option-title="Choose a monogram font"] .ef__swatch-image {
-
-  height: auto !important;
-  width: 156px !important;
-  aspect-ratio: 156 / 114;
-}
-
+.ef__product-option[data-option-title="Choose a monogram font"] .ef__swatch-image,
+.ef__product-option[data-option-title="Font"] .ef__swatch-image,
 .ef__product-option[data-option-title="Choose a font for the numbers"] .ef__swatch-image {
 
   height: auto !important;
   width: 156px !important;
   aspect-ratio: 156 / 114;
 }
+
 
 
 /* Set border color for FONT image swatches */
@@ -124,3 +78,21 @@ END NEW CHANGES */
   border: 3px solid black !important;
   box-shadow: none !important;
 }
+
+
+
+/* Horizontal checkboxes for all*/
+/* This is not live right now*/
+
+/*
+.ef__option-values-checkbox {
+display: flex !important;
+  gap: 2rem;
+}
+
+.ef__option-value-checkbox {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+*/
