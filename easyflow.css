@@ -1,0 +1,126 @@
+/* NEW CHANGES
+
+.ef__hover-text {
+ display: inline-block !important;
+ opacity: 1 !important;
+ visibility: visible !important;
+ font-size: 13px !important;
+ padding-top: 5px;
+}
+
+.ef__swatch-image {
+ margin-bottom: 18px !important;
+ margin-right: 10px !important;
+}
+
+END NEW CHANGES */
+
+
+/* Horizontal radio buttons for test*/
+/* Needs visual keepup */
+
+.ef__product-option[data-option-title="Second Fairway Wood Number"] .ef__option-values-radio-button {
+  display: flex !important;
+  gap: 2rem;
+}
+
+.ef__product-option[data-option-title="Second Fairway Wood Number"].ef__option-value-radio-button {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+/* 2 items locked at horizontal radio buttons for test*/
+/* 6 items in the option set  */
+
+.ef__product-option[data-option-title="How many fairways?"] .ef__option-values-radio-button,
+.ef__product-option[data-option-title="How many hybrids?"] .ef__option-values-radio-button {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.ef__product-option[data-option-title="How many fairways?"] .ef__option-value-radio-button,
+.ef__product-option[data-option-title="How many hybrids?"] .ef__option-value-radio-button {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  width: calc(50% - 0.25rem);
+  /* This will make each radio button take up half the width minus half the gap */
+}
+
+/* Horizontal radio buttons for test*/
+/* 2 items in the option set  */
+
+.ef__product-option[data-option-title="Which putter would you like?"] .ef__option-values-radio-button {
+  display: flex !important;
+  gap: 2rem;
+}
+
+.ef__product-option[data-option-title="Which putter would you like?"].ef__option-value-radio-button {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+/* Horizontal checkboxes for all*/
+
+/*
+ .ef__option-values-checkbox {
+  display: flex !important;
+     gap: 2rem;
+ }
+ 
+ .ef__option-value-checkbox {
+     flex-direction: row;
+     display: flex;
+     align-items: center;
+ }
+ */
+
+/* Remove text below images */
+
+.ef__hover-text {
+  display: none;
+}
+
+
+/* Set size for all swatch images that are not "FONT" */
+
+.ef__swatch-image {
+  height: auto !important;
+  aspect-ratio: 3 / 4;
+  width: 125px !important;
+}
+
+/* Set size for FONT image swatches */
+
+.ef__product-option[data-option-title="Font"] .ef__swatch-image {
+
+  height: auto !important;
+  width: 156px !important;
+  aspect-ratio: 156 / 114;
+}
+
+.ef__product-option[data-option-title="Choose a monogram font"] .ef__swatch-image {
+
+  height: auto !important;
+  width: 156px !important;
+  aspect-ratio: 156 / 114;
+}
+
+.ef__product-option[data-option-title="Choose a font for the numbers"] .ef__swatch-image {
+
+  height: auto !important;
+  width: 156px !important;
+  aspect-ratio: 156 / 114;
+}
+
+
+/* Set border color for FONT image swatches */
+
+.ef__product-option[data-option-title="Font"] input:checked+label {
+
+  border: 3px solid black !important;
+  box-shadow: none !important;
+}

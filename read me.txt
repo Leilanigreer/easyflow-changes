@@ -1,0 +1,9 @@
+This is a short term link to the test product 
+https://0us8h37dnwcc5p79-69044142359.shopifypreview.com/products/ivory-leather-quilted-with-crimson-stitching?variant=49530218578199
+
+if you navigate to 
+Shape == "create my own set"
+Which set would you like?  == "Customize set"
+
+You will see several displays of radio buttons. I have modified the ones running horizontal as I could figure that code. However, I will have more more horizontal than vertial so I am trying to modify the code in the css to make the horizontal the default and then only name the few that will need to be the current default which is vertial. 
+
